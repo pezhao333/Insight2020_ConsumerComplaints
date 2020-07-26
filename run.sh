@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
-javac -cp ./src/report.java
+javac ./src/report.java
 
-java -cp ./src report ./input/complaints.csv ./output/report.csv
+java ./src report ./input/complaints.csv ./output/report.csv
