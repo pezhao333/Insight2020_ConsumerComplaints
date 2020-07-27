@@ -47,8 +47,6 @@ public class report {
 		//This list contains the final output for report.csv, actual csv is generated from iterating through this list and printing out every line
 		List <String> finalOutput = new ArrayList <String> ();
 		
-		
-		//Section 1: this section is meant to import input file, and parse out every line in 2 different ways
 		BufferedReader br = new BufferedReader(new FileReader (inputDirectory));
 		try{
 			while ((currentLine = br.readLine()) != null){
