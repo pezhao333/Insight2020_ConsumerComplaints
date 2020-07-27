@@ -28,9 +28,11 @@ The above approach however, does run into problems when consumers add their own 
 Java is used here, with SDK 14.0.2. No other external dependencies/libraries used.
 
 ## How to run
-Executing the run.sh file will suffice. For the various test cases, they were all locally tested before uploaded on github, therefore will require manually moving fields around to test them - did not get to write another script due to time constraint.
+Executing the run.sh file will suffice. Various test cases are also included to demonstrate code functionality of differing edge cases. The final test case is a portion of the "modest" example given directly from the problem statement to demonstrate relative code robustness.
 
 ## Additional Comments
 Due to time constraint, code is not as polished as can be. 2 major areas I'd like to improve upon if I had more time:
 #### a). Modularities and helper classes
-Certain classes 
+Some codes were repeated at different portions of the main(), helper classes could have helped to make the code cleaner, easier to understand and also implement. As an example, a helper class to identify a "true" or "false" quotation (Syntax Irregularities, (2)), or another helper class that manipulates various arraylists/arrays/strings/various primitives would be helpful when converting between them as we condense down information
+#### b). Comments/Best Practices
+I tried to stay at a middle ground between commenting too much and not commenting enough. In the end I'm still unsure whether the code + comments are clear to a programmer unexposed to my code. Additionally, different classes can be used for the same purpose (i.e. bufferedReader or a scanner class can both be used for reading and writing CSVs). In most cases I try to select the class more relevant for my purpose (i.e. bufferedReader in this case as it does not parse and is therefore slightly faster; depending on what consumers input, using a scanner to parse tokens can also be misleading). As I try to improve on these 2 fronts I'm certain more coding experiences will allow me to develop a deeper understanding of these nuances.
